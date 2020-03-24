@@ -1,6 +1,6 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse">
     <div class = "container-fluid">
-        <div class = "navbar-header">
+        <div class = "navbar-default">
             <button type="button" class="navbar-toggle" (click)="collapsed = !collapsed">
                 <span class="icon-bar" *ngFor="let iconBar of [1, 2, 3]"></span>
             </button>
@@ -12,14 +12,22 @@
             <li><a href="#">Recipes</a></li>
             <li><a href="#">Shopping List</a></li>
         </ul>
+
+        <!--Not sure if I'll use this-->
         <ul class ="nav navbar-nav navbar-right">
             <li class="dropdown">
-                <a href ="#" class="dropdown-toggle">Manage<span class="caret"></span></a>
+                <a href ="#" class="dropdown-toggle">Account<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                    <li><a href ="#"> Saving Data </a></li>
+                    <li><a href ="#"> Sign In </a></li>
                     <li><a href ="#"> Fetching Data </a></li>
                 </ul>
             </li>
         </ul>
+
     </div>
 </nav>
+<div class = "row">
+    <div class ="col-md-12">
+        <img src="images/thali.jpg">
+    </div>
+</div>
