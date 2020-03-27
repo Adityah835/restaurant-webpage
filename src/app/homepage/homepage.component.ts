@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-homepage',
@@ -7,11 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
   
-  collapsed = true;
-
-  constructor() { }
+  constructor() {
+    console.log("constructor called")
+   }
 
   ngOnInit(): void {
+    console.log("ngOnInit called")
+  }
+
+  ngOnDestroy(){
+    console.log("ngOnDestroy called")
   }
 
 }

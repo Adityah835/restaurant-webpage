@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'restaurant-webpage';
+  collapsed = true;
+  homePage = true;
 }
